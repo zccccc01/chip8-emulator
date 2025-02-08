@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chip-8 Emulator</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+        font-family: "Arial", sans-serif;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      canvas {
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.7);
+        margin-top: 20px;
+      }
+
+      input[type="file"] {
+        padding: 8px 15px;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      input[type="file"]:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+
+      label {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Chip-8 Emulator</h1>
+    <label for="fileinput">Upload a Chip-8 file: </label>
+    <input type="file" id="fileinput" autocomplete="off" />
+    <br />
+    <canvas id="canvas"
+      >If you see this message, then your browser doesn't support HTML5</canvas
+    >
+  </body>
+  <script type="module" src="index.js"></script>
+</html>
