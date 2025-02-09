@@ -49,3 +49,4 @@ Press `Esc` to exit
 - [wikipedia CHIP-8](https://en.wikipedia.org/wiki/CHIP-8)
 - [Cowgod's Chip-8](http://devernay.free.fr/hacks/chip8/C8TECH10.HTM#Dxyn)
 - [CHIP-8](https://multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/)
+- [A Chip8 IDE](https://johnearnest.github.io/Octo/)
